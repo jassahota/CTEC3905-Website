@@ -1,0 +1,66 @@
+body {
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+header {
+	width:100%;
+	height: 50px;
+  background: #ccc;
+  color: #444;
+}
+
+nav {
+
+  background: #aaa;
+  display: none;
+}
+
+.navigation {
+	text-align: center;
+	margin-top: 30px;
+	padding: 1em;
+	display: block;
+}
+
+.navigation:hover{
+	color: #537bbc;
+}
+
+#menu {
+  padding: 1em;
+  background: #fff;
+  display: block;
+}
+
+.show-menu {
+  display: block;
+}
+
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+nav {
+    display: block;
+  }
+  
+.navigation {
+	float:right;
+	text-align: right;
+	display: block;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#menu {
+    display: none;
+  }
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1024px) {
+
+}
