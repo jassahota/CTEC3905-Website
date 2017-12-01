@@ -1,26 +1,29 @@
-body {
-  margin:0;
-  padding:0;
-  text-align: center;
+html{
+	background-color: #72777f;
+	height: 100%;
 }
 
+body{
+	height:100%;
+	margin: 0;
+}
+
+/* HEADER */
+
 header {
+	background: #ffffff;
 	width:100%;
-	height: 50px;
-  background: #ccc;
-  color: #444;
+	top: 0;
 }
 
 nav {
-
-  background: #aaa;
   display: none;
 }
 
 .navigation {
 	text-align: center;
 	margin-top: 30px;
-	padding: 1em;
+	padding: 32px;
 	display: block;
 }
 
@@ -29,27 +32,23 @@ nav {
 }
 
 #menu {
-  padding: 1em;
-  background: #fff;
-  display: block;
+	padding: 32px;
+	display: block;
 }
 
 .show-menu {
-  display: block;
+	display: block;
 }
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 nav {
-    display: block;
+	display: block;
   }
   
 .navigation {
-	float:right;
-	text-align: right;
-	display: block;
-	padding-top: 0px;
+	display: inline-block;
 	margin-top: 0px;
 }
 
@@ -57,10 +56,132 @@ nav {
     display: none;
   }
 }
-/* END FIRST BREAKPOINT */
 
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1024px) {
 
 }
+
+
+
+/* MAIN SECTION */
+.container {
+	background: rgba(196, 196, 196, 0.3);
+	text-align: center;
+	height: 250px;
+	width: 90%;
+	border: solid; 
+	margin: 60px auto;
+}
+
+.title{
+	margin: 0;
+	font-size: 30px;
+	color: white;
+	font-family: Comic Sans MS;
+}
+
+ /* FOOTBALL SECTION */
+ #football{
+	background: #031c49;
+	width: 100%;
+	height: 1000px;
+	top:0;
+
+}
+
+.football-title{
+	background: #686b7c;
+	text-align: center;
+	height:110px;
+	width: 220px;
+	margin: auto;
+ }
+ 
+.football-image{
+ 	display: block;
+ 	width: 60px;
+  	height: 60px;
+  	margin: 0 auto;
+  	top: 0px;
+}
+
+.football-info{
+	background: rgba(47, 119, 117, 0.3);
+	height: 200px;
+	width: 90%;
+	text-align: center;
+	margin: 20px auto;
+	border-radius: 30px;
+}
+
+ /* F1 SECTION */
+ #f1{
+	background: #212121;
+	width: 100%;
+	height: 1000px;
+	top:0;
+
+}
+
+.f1-title{
+	background: #686b7c;
+	text-align: center;
+	height:110px;
+	width: 220px;
+	margin: auto;
+ }
+ 
+.f1-image{
+ 	display: block;
+ 	width: 130px;
+  	height: 70px;
+  	margin: 0 auto;
+  	top: 0px;
+}
+
+.f1-info{
+	background: rgba(47, 119, 117, 0.3);
+	height: 200px;
+	width: 90%;
+	text-align: center;
+	margin: 20px auto;
+	border-radius: 30px;
+}
+
+ /* BASKETBALL SECTION */
+ #basketball{
+	background: #031c49;
+	width: 100%;
+	height: 1000px;
+	top:0;
+
+}
+
+.basketball-title{
+	background: #686b7c;
+	text-align: center;
+	height:110px;
+	width: 220px;
+	margin: auto;
+ }
+ 
+.basketball-image{
+ 	display: block;
+ 	width: 60px;
+  	height: 60px;
+  	margin: 0 auto;
+  	top: 0px;
+}
+
+.basketball-info{
+	background: rgba(47, 119, 117, 0.3);
+	height: 200px;
+	width: 90%;
+	text-align: center;
+	margin: 20px auto;
+	border-radius: 30px;
+}
+
+
