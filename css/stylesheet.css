@@ -8,13 +8,19 @@ body{
 	margin: 0;
 }
 
-/* HEADER */
+/* HEADER & NAV */
 
 header {
 	background: #ffffff;
 	width:100%;
 	top: 0;
 	position: fixed;
+}
+
+.website-name{
+	display:inline-block;
+	font-size: 20px;
+	padding: 20px;
 }
 
 nav {
@@ -28,21 +34,28 @@ nav {
 	text-align: center;
 	padding: 15px;
 	display: block;
+	color: #191919;
 }
 
 .navigation:hover{
-	color: #537bbc;
+	color: #1aadf2;
 }
 
 #menu {
+	
 	text-transform: uppercase;
 	font-size: 15px;
 	text-decoration: none;
-	padding: 15px;
-	display: block;
-	text-align: right;
-	background-color: #ffffff;
+	padding: 25px;
+	display: inline-block;
+	background-color: #c1c1c1;
+	color: #0006b7;
+	float: right;
 	
+}
+
+#menu:hover {
+	color: #0094ff;
 }
 
 .show-menu {
@@ -53,12 +66,14 @@ nav {
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 nav {
-	display: block;
+	display: inline-block;
+	float: right;
   }
   
 .navigation {
 	display: inline-block;
 	margin-top: 0px;
+	font-size: 15px;
 }
 
 #menu {
@@ -69,6 +84,9 @@ nav {
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1024px) {
+.navigation {
+	font-size: 18px;
+}
 
 }
 
@@ -205,5 +223,142 @@ nav {
 	margin: 20px auto;
 	border-radius: 30px;
 }
+
+
+/* BREAKPOINT (MEDIUM SCREEN) */
+  @media screen and (min-width: 500px) {
+	  
+.container{
+	width: 80%;
+	height: 300px;
+
+}
+
+.title {
+	font-size: 30px;
+} 
+ 
+ .information {
+	font-size: 12px;
+ }
+ 
+ /* FOOTBALL SECTION */
+
+ #football{
+	height: 1150px;
+ }
+ 
+.football-title{
+	height:150px;
+	width: 400px;
+
+ }
+ 
+ .football-image{
+ 	width: 100px;
+  	height: 100px;
+
+ }
+ 
+
+  .football-info{
+	height: 200px;
+	width: 90%;
+}
+
+/* F1 SECTION */
+
+ #f1{
+	height: 1150px;
+ }
+
+.f1-title{
+	height:150px;
+	width: 400px;
+}
+
+
+ 
+.f1-image{
+ 	width: 250px;
+  	height: 100px;
+}
+  
+.f1-info{
+	height: 200px;
+}
+  
+
+  
+/* BASKETBALL SECTION */
+ 
+ #basketball{
+	height: 1150px;
+ } 
+ 
+.basketball-title{
+	height:150px;
+	width: 400px;
+
+ }
+ 
+.basketball-image{
+ 	width: 100px;
+  	height: 100px;
+  }
+  
+.basketball-info{
+	height: 200px;
+}
+  
+}
+
+
+@media screen and (min-width: 1024px) {
+   
+   	  
+/* flip card css */
+.container {
+	width: 85%;
+	height: 350px;
+}
+
+.information {
+	font-size: 18px;
+}
+
+#football{
+	height: 1350px;
+
+}
+
+.football-info{
+	height: 300px;
+}
+
+#f1{
+	height: 1350px;
+
+}
+
+  .f1-info{
+	height: 300px;
+}
+
+#basketball{
+	height: 1350px;
+
+}
+  .basketball-info{
+	height: 300px;
+}
+
+}   
+ 
+
+
+
+
+
 
 
