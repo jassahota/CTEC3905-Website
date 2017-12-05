@@ -1,5 +1,5 @@
 html{
-	background-color: #72777f;
+	background-color: #212121;
 	height: 100%;
 }
 
@@ -120,24 +120,23 @@ nav {
 /* INTRO */
 #intro{
 	height: 100vh;
-	top:0;
 
  }
  
 .slideshow {
-  margin: 2em auto 1em;
+
   width: 100%; /* altering this breaks the centering??? */
-  height: 100%;
+  height: 95%;
   overflow: hidden;
   position: relative;
 }
 
 .slideshow img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: round 30s infinite;
-  opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	animation: round 30s infinite;
+	opacity: 0;
 
 }
 
@@ -161,7 +160,7 @@ img:nth-child(6) { animation-delay: 25s; }
  #football{
 	background: #031c49;
 	width: 100%;
-	height: 1100px;
+	height: 1000px;
 	top:0;
 
 }
@@ -179,7 +178,6 @@ img:nth-child(6) { animation-delay: 25s; }
  	width: 60px;
   	height: 60px;
   	margin: 0 auto;
-  	top: 0px;
 }
 
 .football-info{
@@ -278,11 +276,11 @@ img:nth-child(6) { animation-delay: 25s; }
  }
  
  /* MAIN */
+  
+#football{
+	height: 1150px;
+ }
  
- .slideshow img {
-   height: 750px;
- }
- }
 .football-title{
 	height:150px;
 	width: 400px;
@@ -376,7 +374,7 @@ img:nth-child(6) { animation-delay: 25s; }
 
 }
 
-  .f1-info{
+.f1-info{
 	height: 300px;
 }
 
