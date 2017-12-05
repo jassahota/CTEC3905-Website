@@ -1,3 +1,4 @@
+/* HTML & BODY */
 html{
 	background-color: #212121;
 	height: 100%;
@@ -10,6 +11,7 @@ body{
 	margin: 0;
 	 
 }
+
 
 /* HEADER & NAV */
 
@@ -93,6 +95,8 @@ nav {
 }
 
 }
+/* END OF NAV & HEADER */
+
 
 
 /* MAIN SECTION */
@@ -120,37 +124,8 @@ nav {
 	font-family: Comic Sans MS;
 }
 
-/*filler*/
-#filler{
-	height: 40px;
-	text-align: center;
 
-}
-
-.top {
-    background-color: #727272;
-    width: 100%;
-    height: 200px;
-	
-}
-
-.top:hover{
-	background-color: #303030
-}
-
-.top-txt {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-	font-family: Gill Sans, sans-serif;
-	color: white;
-	font-size: 30px;
-
-}
-
-
-/* INTRO */
+/* INTRO SECTION*/
 #intro{
 	height: 100vh;
 
@@ -162,6 +137,35 @@ nav {
   height: 95%;
   overflow: hidden;
   position: relative;
+}
+
+.intro-txt{
+	position: absolute;
+	height: 500px;
+	font-size: 20px;
+	z-index: 10000;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	background: rgba(45, 45, 45, 0.7);
+}
+
+.intro-teams{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+.intro-teams:hover{
+	color: grey;
+}
+
+.intro-header{
+	border-bottom: 10px solid white;
+	width: 300px;
 }
 
 .slideshow img {
@@ -190,12 +194,11 @@ img:nth-child(5) { animation-delay: 20s; }
 img:nth-child(6) { animation-delay: 25s; }
 
  /* FOOTBALL SECTION */
- #football{
+#football{
 	background: #031c49;
 	width: 100%;
 	height: 1000px;
 	top:0;
-
 }
 
 .football-title{
@@ -290,10 +293,39 @@ img:nth-child(6) { animation-delay: 25s; }
 	border-radius: 30px;
 }
 
+/*filler*/
+#filler{
+	height: 40px;
+	text-align: center;
+
+}
+
+.top {
+    background-color: #727272;
+    width: 100%;
+    height: 200px;
+	
+}
+
+.top:hover{
+	background-color: #303030
+}
+
+.top-txt {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+	font-family: Gill Sans, sans-serif;
+	color: white;
+	font-size: 30px;
+
+}
 
 /* BREAKPOINT (MEDIUM SCREEN) */
-  @media screen and (min-width: 520px) {
-	  
+@media screen and (min-width: 520px) {
+	 
+/* MAIN SECTION */	 
 .container{
 	width: 80%;
 	height: 300px;
@@ -304,39 +336,47 @@ img:nth-child(6) { animation-delay: 25s; }
 	font-size: 30px;
 } 
  
- .information {
-	font-size: 12px;
- }
  
- /* MAIN */
-  
+/*INTRO SECTION*/
+.information {
+	font-size: 12px;
+}
+ 
+.intro-txt{
+	height: 600px;
+ 	font-size: 30px;
+}
+ 
+.intro-header{
+ 	border-bottom: 10px solid white;
+ 	width: 400px;
+}
+ 
+
+/*FOOTBALL SECTION*/
 #football{
 	height: 1150px;
- }
+}
  
 .football-title{
 	height:150px;
 	width: 400px;
-
- }
+}
  
- .football-image{
+.football-image{
  	width: 100px;
   	height: 100px;
-
- }
+}
  
-
-  .football-info{
+ .football-info{
 	height: 200px;
 	width: 90%;
 }
 
 /* F1 SECTION */
-
- #f1{
+#f1{
 	height: 1150px;
- }
+}
 
 .f1-title{
 	height:150px;
@@ -354,7 +394,6 @@ img:nth-child(6) { animation-delay: 25s; }
 	height: 200px;
 }
   
-
   
 /* BASKETBALL SECTION */
  
@@ -365,13 +404,12 @@ img:nth-child(6) { animation-delay: 25s; }
 .basketball-title{
 	height:150px;
 	width: 400px;
-
- }
+}
  
 .basketball-image{
  	width: 100px;
   	height: 100px;
-  }
+}
   
 .basketball-info{
 	height: 200px;
@@ -380,10 +418,8 @@ img:nth-child(6) { animation-delay: 25s; }
 }
 
 
-@media screen and (min-width: 1024px) {
-   
-   	  
-/* flip card css */
+@media screen and (min-width: 1024px) {   	  
+
 .container {
 	width: 85%;
 	height: 350px;
@@ -392,6 +428,11 @@ img:nth-child(6) { animation-delay: 25s; }
 .information {
 	font-size: 18px;
 }
+
+ .intro-header{
+ 	border-bottom: 10px solid white;
+ 	width: 800px;
+ }
 
 #football{
 	height: 1350px;
