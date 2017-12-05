@@ -14,8 +14,8 @@ header {
 	background: #ffffff;
 	width:100%;
 	top: 0;
-	position: fixed;
 }
+
 
 .website-name{
 	display:inline-block;
@@ -46,7 +46,7 @@ nav {
 	text-transform: uppercase;
 	font-size: 15px;
 	text-decoration: none;
-	padding: 25px;
+	padding: 23px;
 	display: inline-block;
 	background-color: #c1c1c1;
 	color: #0006b7;
@@ -64,10 +64,11 @@ nav {
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 520px) {
 nav {
 	display: inline-block;
 	float: right;
+	padding: 1em;
   }
   
 .navigation {
@@ -120,13 +121,47 @@ nav {
 #intro{
 	height: 100vh;
 	top:0;
+
  }
+ 
+.slideshow {
+  margin: 2em auto 1em;
+  width: 100%; /* altering this breaks the centering??? */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: round 30s infinite;
+  opacity: 0;
+
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+img:nth-child(1) { animation-delay: 0s; }
+img:nth-child(2) { animation-delay: 5s; }
+img:nth-child(3) { animation-delay: 10s; }
+img:nth-child(4) { animation-delay: 15s; }
+img:nth-child(5) { animation-delay: 20s; }
+img:nth-child(6) { animation-delay: 25s; }
 
  /* FOOTBALL SECTION */
  #football{
 	background: #031c49;
 	width: 100%;
-	height: 1000px;
+	height: 1100px;
 	top:0;
 
 }
@@ -226,7 +261,7 @@ nav {
 
 
 /* BREAKPOINT (MEDIUM SCREEN) */
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 520px) {
 	  
 .container{
 	width: 80%;
@@ -242,12 +277,12 @@ nav {
 	font-size: 12px;
  }
  
- /* FOOTBALL SECTION */
-
- #football{
-	height: 1150px;
- }
+ /* MAIN */
  
+ .slideshow img {
+   height: 750px;
+ }
+ }
 .football-title{
 	height:150px;
 	width: 400px;
