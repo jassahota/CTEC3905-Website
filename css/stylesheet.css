@@ -99,18 +99,7 @@ nav {
 }
 /* END OF NAV & HEADER */
 
-
-
-/* MAIN SECTION */
-.container {
-	background: rgba(196, 196, 196, 0.3);
-	text-align: center;
-	height: 250px;
-	width: 90%;
-	border: solid; 
-	margin: 60px auto;
-}
-
+/* MAIN SECTIONS */
 .title{
 	margin: 0;
 	font-size: 20px;
@@ -125,6 +114,41 @@ nav {
 	font-family: Comic Sans MS;
 }
 
+.sports-title{
+	background: #686b7c;
+	text-align: center;
+	height:110px;
+	width: 220px;
+	margin: auto;
+ }
+
+.information{
+	text-align: left;
+	margin: 0;
+	font-size: 10px;
+	color: white;
+	font-family: Comic Sans MS;
+}
+
+.sports-info{
+	background: rgba(255, 255, 255, 0.7);
+	height: 300px;
+	width: 90%;
+	text-align: center;
+	margin: 20px auto;
+	border-radius: 30px;
+}
+
+.container {
+	background: rgba(196, 196, 196, 0.3);
+	text-align: center;
+	height: 250px;
+	width: 90%;
+	border: solid; 
+	margin: 60px auto;
+}
+
+/* NEWS */
 button{
 	background-color: white;
     border: none;
@@ -135,14 +159,6 @@ button{
 	height: 50px;
 	width: 200px;
 	margin: 20px;
-}
-
-.information{
-	text-align: left;
-	margin: 0;
-	font-size: 10px;
-	color: white;
-	font-family: Comic Sans MS;
 }
 
 /* INTRO SECTION*/
@@ -213,6 +229,7 @@ img:nth-child(4) { animation-delay: 15s; }
 img:nth-child(5) { animation-delay: 20s; }
 img:nth-child(6) { animation-delay: 25s; }
 
+
  /* FOOTBALL SECTION */
 #football{
 	background: #031c49;
@@ -220,29 +237,12 @@ img:nth-child(6) { animation-delay: 25s; }
 	height: 1100px;
 	top:0;
 }
-
-.football-title{
-	background: #686b7c;
-	text-align: center;
-	height:110px;
-	width: 220px;
-	margin: auto;
- }
  
 .football-image{
  	display: block;
  	width: 60px;
   	height: 60px;
   	margin: 0 auto;
-}
-
-.football-info{
-	background: rgba(255, 255, 255, 0.7);
-	height: 300px;
-	width: 90%;
-	text-align: center;
-	margin: 20px auto;
-	border-radius: 30px;
 }
 
  /* F1 SECTION */
@@ -270,15 +270,6 @@ img:nth-child(6) { animation-delay: 25s; }
   	top: 0px;
 }
 
-.f1-info{
-	background: rgba(255, 255, 255, 0.7);
-	height: 300px;
-	width: 90%;
-	text-align: center;
-	margin: 20px auto;
-	border-radius: 30px;
-}
-
  /* BASKETBALL SECTION */
 #basketball{
 	background: #031c49;
@@ -304,16 +295,7 @@ img:nth-child(6) { animation-delay: 25s; }
   	top: 0px;
 }
 
-.basketball-info{
-	background: rgba(255, 255, 255, 0.7);
-	height: 300px;
-	width: 90%;
-	text-align: center;
-	margin: 20px auto;
-	border-radius: 30px;
-}
-
-/*filler*/
+/* FILLER */
 #filler{
 	height: 40px;
 	text-align: center;
@@ -341,13 +323,8 @@ img:nth-child(6) { animation-delay: 25s; }
 
 /* BREAKPOINT (MEDIUM SCREEN) */
 @media screen and (min-width: 520px) {
-	 
-/* MAIN SECTION */	 
-.container{
-	width: 80%;
-	height: 300px;
-}
 
+/* MAIN SECTIONS */
 .title {
 	font-size: 30px;
 } 
@@ -356,15 +333,31 @@ img:nth-child(6) { animation-delay: 25s; }
 	font-size: 30px;
 }
 
-button{
-	margin-bottom: 20px;
+.sports-title{
+	height:150px;
+	width: 400px;
 }
- 
-/*INTRO SECTION*/
+
+.container{
+	width: 80%;
+	height: 300px;
+}
+
+.sports-info{
+	height: 270px;
+	width: 80%;
+}
+
 .information {
 	font-size: 12px;
 }
- 
+
+/* NEWS */
+button{
+	margin-bottom: 20px;
+}
+
+/* INTRO SECTION*/ 
 .intro-txt{
 	height: 600px;
  	font-size: 30px;
@@ -375,69 +368,35 @@ button{
  	width: 400px;
 }
  
-
 /*FOOTBALL SECTION*/
 #football{
 	height: 1200px;
-}
- 
-.football-title{
-	height:150px;
-	width: 400px;
 }
  
 .football-image{
  	width: 100px;
   	height: 100px;
 }
- 
- .football-info{
-	height: 270px;
-	width: 80%;
-}
 
 /* F1 SECTION */
 #f1{
 	height: 1150px;
 }
-
-.f1-title{
-	height:150px;
-	width: 400px;
-}
-
-
  
 .f1-image{
  	width: 250px;
   	height: 100px;
 }
   
-.f1-info{
-	height: 270px;
-	width: 80%;
-}
-  
-  
 /* BASKETBALL SECTION */
  
- #basketball{
+#basketball{
 	height: 1150px;
- } 
- 
-.basketball-title{
-	height:150px;
-	width: 400px;
-}
+} 
  
 .basketball-image{
  	width: 100px;
   	height: 100px;
-}
-  
-.basketball-info{
-	height: 270px;
-	width: 80%;
 }
   
 }
@@ -458,36 +417,30 @@ button{
  	border-bottom: 10px solid white;
  	width: 800px;
  }
+ 
+/* SPORTS SECTIONS */
+.sports-info{
+	width: 70%;
+	height: 250px;
+}
 
+/* FOOTBALL */
 #football{
 	height: 1350px;
 }
 
-.football-info{
-	width: 70%;
-	height: 250px;
-}
-
+/* F1 */
 #f1{
 	height: 1350px;
-
 }
 
-.f1-info{
-	width: 70%;
-	height: 250px;
-}
-
+/* BASKETBALL */
 #basketball{
 	height: 1350px;
-
-}
-  .basketball-info{
-	width: 70%;
-	height: 250px;
-}
-
 } 
+
+}
+/* END OF MAIN SECTION */
 
 
 /* FOOTER */
@@ -523,7 +476,7 @@ button{
 } 
 
 }
- 
+/* END OF FOOTER */
 
 
 
