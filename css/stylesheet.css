@@ -72,7 +72,7 @@ nav {
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 520px) {
-nav {
+nav{
 	display: inline-block;
 	float: right;
 	padding: 1em;
@@ -149,7 +149,31 @@ nav {
 }
 
 /* NEWS */
-button{
+#footballQuery{
+	background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	height: 50px;
+	width: 200px;
+	margin: 20px;
+}
+
+#f1Query{
+	background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	height: 50px;
+	width: 200px;
+	margin: 20px;
+}
+
+#basketballQuery{
 	background-color: white;
     border: none;
     color: black;
@@ -204,7 +228,7 @@ button{
 	width: 300px;
 }
 
-.slideshow img {
+.slideshow-img {
 	position: absolute;
 	width: 100%;
 	height: 100vh;
@@ -222,12 +246,12 @@ button{
   }
 }
 
-img:nth-child(1) { animation-delay: 0s; }
-img:nth-child(2) { animation-delay: 5s; }
-img:nth-child(3) { animation-delay: 10s; }
-img:nth-child(4) { animation-delay: 15s; }
-img:nth-child(5) { animation-delay: 20s; }
-img:nth-child(6) { animation-delay: 25s; }
+.slideshow-img:nth-child(1) { animation-delay: 0s; }
+.slideshow-img:nth-child(2) { animation-delay: 5s; }
+.slideshow-img:nth-child(3) { animation-delay: 10s; }
+.slideshow-img:nth-child(4) { animation-delay: 15s; }
+.slideshow-img:nth-child(5) { animation-delay: 20s; }
+.slideshow-img:nth-child(6) { animation-delay: 25s; }
 
 
  /* FOOTBALL SECTION */
@@ -321,7 +345,7 @@ img:nth-child(6) { animation-delay: 25s; }
 }
 
 /* LOGO TRANSITION */
-.hovereffect {
+.logo-hover {
   width: 250px;
   height: 100px;
   margin: auto;
@@ -332,7 +356,7 @@ img:nth-child(6) { animation-delay: 25s; }
   border-radius: 90px;
 }
 
-.hovereffect .overlay {
+.logo-hover .overlay {
   width: 90%;
   height: 90%;
   position: absolute;
@@ -341,7 +365,7 @@ img:nth-child(6) { animation-delay: 25s; }
   left: 0;
 }
 
-.hovereffect img {
+.logo-img{
 	display: block;
 	height: 100%;
 	width:100%;
@@ -350,7 +374,7 @@ img:nth-child(6) { animation-delay: 25s; }
 	border-radius: 90px;
 }
 
-.hovereffect:hover img {
+.logo-hover:hover .logo-img{
 	opacity: 0.4;
 	filter: alpha(opacity=40);
 	transform: translate3d(0,0,0);
@@ -381,7 +405,7 @@ img:nth-child(6) { animation-delay: 25s; }
 	transform: translate3d(-100%,0,0);
 }
 
-.hovereffect:hover .logo-title:after {
+.logo-hover:hover .logo-title:after {
   transform: translate3d(0,0,0);
 }
 
@@ -397,7 +421,7 @@ img:nth-child(6) { animation-delay: 25s; }
 	transform: translate3d(100%,0,0);
 }
 
-.hovereffect:hover .logo-info{
+.logo-hover:hover .logo-info{
   opacity: 1;
   filter: alpha(opacity=100);
   transform: translate3d(0,0,0);
@@ -436,7 +460,15 @@ img:nth-child(6) { animation-delay: 25s; }
 }
 
 /* NEWS */
-button{
+#footballQuery{
+	margin-bottom: 20px;
+}
+
+#f1Query{
+	margin-bottom: 20px;
+}
+
+#basketballQuery{
 	margin-bottom: 20px;
 }
 
@@ -483,7 +515,7 @@ button{
 }
 
 /* LOGO TRANSITION */
- .hovereffect {
+.logo-hover {
   width: 350px;
   height: 150px;
 }
@@ -538,7 +570,7 @@ button{
 } 
 
 /* LOGO TRANSITION */
- .hovereffect {
+.logo-hover{
   width: 450px;
   height: 170px;
 }
