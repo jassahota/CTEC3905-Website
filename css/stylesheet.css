@@ -11,7 +11,70 @@ body{
 	margin: 0;	 
 }
 
+/* PRELOADER */
+#preloader_preload {
+	display: block;
+	z-index: 99998;
+	height: 100vh;
+	background-color: grey;
+	position: fixed;
+	top: 0;  
+	width: 100%;
+    left: 0;
+	animation-name: cssAnimation;
+	animation-duration: 0.5s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
 
+@keyframes cssAnimation {
+	to {
+		height: 0;
+		overflow:hidden;
+    }
+}
+
+.spinner {
+  height: 60px;
+  width: 60px;
+  top: 50%;
+  left: 45%;
+  position: relative;
+  animation: rotation .6s infinite linear;
+  border-left: 8px solid rgba(112, 112, 112, 0.1);
+  border-right: 8px solid rgba(112, 112, 112, 0.1);
+  border-bottom: 8px solid rgba(112, 112, 112, 0.1);
+  border-top: 8px solid rgba(145, 70, 61, 1);
+  border-radius: 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.loading{
+	position: absolute;
+    top: 60%;
+    left: 43%;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: Comic Sans MS;
+}	
+
+.preload-img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .2;
+}
 /* HEADER & NAV */
 
 header {
@@ -189,7 +252,7 @@ nav{
 }
 
 #football-news a:hover{
-	color: #1a3e77;
+	color: #5098a0;
 }
 
 #f1-news a{
@@ -199,7 +262,7 @@ nav{
 }
 
 #f1-news a:hover{
-	color: #1a3e77;
+	color: #5098a0;
 }
 
 #basketball-news a{
@@ -209,7 +272,7 @@ nav{
 }
 
 #basketball-news a:hover{
-	color: #1a3e77;
+	color: #5098a0;
 }
 
 /* INTRO SECTION*/
@@ -344,14 +407,14 @@ nav{
 
 /* FILLER */
 #filler{
-	height: 40px;
+	height: 60px;
 	text-align: center;
 }
 
 .top {
     background-color: #727272;
     width: 100%;
-    height: 40px;
+    height: 60px;
 }
 
 .top:hover{
@@ -365,8 +428,26 @@ nav{
     text-decoration: none;
 	font-family: Gill Sans, sans-serif;
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 }
+
+.arrow{
+	height: 25px;
+	animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+
 
 /* LOGO TRANSITION */
 .logo-hover {
@@ -411,7 +492,7 @@ nav{
 	margin-top: 0px;
 	text-align: center;
 	position: relative;
-	font-size: 17px;
+	font-size: 12px;
 	overflow: hidden;
 	padding: 5px;
 	background-color: transparent;
@@ -553,15 +634,15 @@ nav{
 /* LOGO TRANSITION */
 .logo-hover {
   width: 350px;
-  height: 150px;
+  height: 120px;
 }
 
 .logo-title{
-	font-size: 20px;
+	font-size: 15px;
 }
  
 .logo-info{
-	font-size: 18px;
+	font-size: 15px;
 }
   
 }
@@ -670,6 +751,8 @@ nav{
 
 }
 /* END OF FOOTER */
+
+
 
 
 
