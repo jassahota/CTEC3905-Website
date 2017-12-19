@@ -616,14 +616,16 @@ nav{
 
 /* LOGO TRANSITION */
 .logo-hover {
-  width: 250px;
+  width: 80%;
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
   text-align: center;
   background: #6d6d6d;
-  border-radius: 90px;
+  border-radius: 30%;
+  border: solid 2px white
+
 }
 
 .logo-hover .overlay {
@@ -641,13 +643,15 @@ nav{
 	width:100%;
 	transition: opacity 0.35s, transform 0.35s;
 	transform: translate3d(-10px,0,0);
-	border-radius: 90px;
+	border-radius: 30%;
+
 }
 
 .logo-hover:hover .logo-img{
 	opacity: 0.4;
 	filter: alpha(opacity=40);
 	transform: translate3d(0,0,0);
+	
 }
 
 .logo-title {
@@ -835,8 +839,8 @@ nav{
 
 /* LOGO TRANSITION */
 .logo-hover {
-  width: 350px;
-  height: 120px;
+  width: 70%;
+  height: 150px;
 }
 
 .logo-title{
@@ -911,6 +915,12 @@ nav{
 	font-size: 17px;
 }
 
+/* LOGO TRANSITION */
+.logo-hover {
+  width: 60%;
+  height: 165px;
+}
+
 /* SPORTS SECTIONS */
 .sports-info{
 	width: 70%;
@@ -933,10 +943,7 @@ nav{
 } 
 
 /* LOGO TRANSITION */
-.logo-hover{
-  width: 450px;
-  height: 170px;
-}
+
 
 .logo-title{
 	font-size: 25px;
