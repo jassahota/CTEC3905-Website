@@ -26,4 +26,4 @@ the user hovers mouse of the image then text displays with description of logo w
 - The footer includes the name of the person who created the website and below is a logo of github and this a link that once hovered over will spin 360 degrees
 also once clicked it will go to the users repositories.
 
-![Alt text](images/wireframe.png raw=true "Wireframe")
+![wireframe](https://user-images.githubusercontent.com/32485792/34178417-fe8d700e-e4fe-11e7-801c-3516e229ca83.png)
