@@ -12,7 +12,7 @@ body{
 }
 
 /* PRELOADER */
-#preloader_preload {
+.preloader {
 	display: block;
 	z-index: 99998;
 	height: 100vh;
@@ -37,7 +37,7 @@ body{
     }
 }
 
-.spinner {
+.loading-icon {
   height: 60px;
   width: 60px;
   top: 50%;
@@ -101,7 +101,7 @@ nav {
 	font-size: 15px;
 	text-decoration: none;
 	text-align: center;
-	padding: 15px;
+	padding: 20px;
 	display: block;
 	color: #191919;	
 }
@@ -142,7 +142,9 @@ nav{
 .navigation {
 	display: inline-block;
 	margin-top: 0px;
-	font-size: 15px;
+	font-size: 13px;
+	padding-left: 0px;
+	padding-top: 10px
 }
 
 #menu {
@@ -154,6 +156,7 @@ nav{
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1024px) {
 .navigation {
+	padding-left: 30px;
 	font-size: 18px;
 }
 
@@ -209,81 +212,18 @@ nav{
 	margin: 60px auto;
 }
 
-/* NEWS */
-#footballQuery{
-	background-color: white;
-    border: none;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-	height: 50px;
-	width: 200px;
-	margin: 20px;
-}
 
-#f1Query{
-	background-color: white;
-    border: none;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-	height: 50px;
-	width: 200px;
-	margin: 20px;
-}
-
-#basketballQuery{
-	background-color: white;
-    border: none;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-	height: 50px;
-	width: 200px;
-	margin: 20px;
-}
-
-#football-news a{
-	color: #13383a;
-	font-size: 14px;
-	font-family: Comic Sans MS;
-}
-
-#football-news a:hover{
-	color: #5098a0;
-}
-
-#f1-news a{
-	color:#13383a;
-	font-size: 14px;
-	font-family: Comic Sans MS;
-}
-
-#f1-news a:hover{
-	color: #5098a0;
-}
-
-#basketball-news a{
-	color: #13383a;
-	font-size: 14px;
-	font-family: Comic Sans MS;
-}
-
-#basketball-news a:hover{
-	color: #5098a0;
-}
 
 /* INTRO SECTION*/
 #intro{
 	height: 100vh;
+	background-color: #1c1c1c;
 }
  
 .slideshow {
   width: 100%;
-  height: 95%;
+  height: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -320,7 +260,7 @@ nav{
 .slideshow-img {
 	position: absolute;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	animation: round 30s infinite;
 	opacity: 0;
 
@@ -342,6 +282,144 @@ nav{
 .slideshow-img:nth-child(5) { animation-delay: 20s; }
 .slideshow-img:nth-child(6) { animation-delay: 25s; }
 
+/*SPORTS*/
+#sports{
+	background: #212121;
+	width: 100%;
+	height: 1200px;
+	top:0;
+}
+
+
+.football-qoute,
+.f1-qoute, 
+.basketball-qoute{
+	font-family: Bookman;
+	color: #ffffff;
+	position: absolute;
+    display:block;
+	width: 60%; 
+	font-size: 23px;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+.football-qoute{
+	animation-name: qoute-1;
+}
+
+.f1-qoute{
+	animation-name: qoute-2;
+}
+
+.basketball-qoute{
+	animation-name: qoute-3;
+}
+
+@keyframes qoute-1 {
+	0%, 8.3% { 
+	left: -30%; 
+	opacity: 0; 
+	}
+	8.3%,25% { 
+	left: 20%; 
+	opacity: 1; 
+	}
+	33.33%, 100% { 
+	left: 30%; 
+	opacity: 0; 
+	}
+}
+
+@keyframes qoute-2 {
+	0%, 33.33% { 
+	left: -30%; 
+	opacity: 0; 
+	}
+	41.63%, 58.29% { 
+	left: 20%; 
+	opacity: 1; 
+	}
+	66.66%, 100% { 
+	left: 30%; 
+	opacity: 0; 
+	}
+}
+
+@keyframes qoute-3 {
+	0%, 66.66% { 
+	left: -30%; 
+	opacity: 0; 
+	}
+	74.96%, 91.62% { 
+	left: 20%; 
+	opacity: 1; 
+	}
+	100% { 
+	left: 30%; 
+	opacity: 0; 
+	}
+}
+
+.football-info{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.main-flip{
+	border: 5px solid red;
+	width: 90%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.flip-container {
+    position: relative;
+    perspective: 1000px;
+	margin: 20px auto ; 
+	
+}
+
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+	width: 250px;
+	height: 250px;
+}
+
+.flip-container .front-side,
+.flip-container .back-side {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.2s;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+	background: black;
+	border-radius: 100%;
+}
+
+.flip-container .back-side {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.flip-container .front-side {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front-side {
+    transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back-side {
+    transform: rotateY(0deg);
+}
+
 
  /* FOOTBALL SECTION */
 #football{
@@ -358,20 +436,34 @@ nav{
   	margin: 0 auto;
 }
 
+#footballQuery{
+	background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	height: 50px;
+	width: 200px;
+	margin: 20px;
+}
+
+#football-news a{
+	color: #13383a;
+	font-size: 14px;
+	font-family: Comic Sans MS;
+}
+
+#football-news a:hover{
+	color: #5098a0;
+}
+
  /* F1 SECTION */
  #f1{
 	background: #212121;
 	width: 100%;
 	height: 1150px;
 	top:0;
-}
-
-.f1-title{
-	background: #686b7c;
-	text-align: center;
-	height:110px;
-	width: 220px;
-	margin: auto;
 }
  
 .f1-image{
@@ -382,20 +474,34 @@ nav{
   	top: 0px;
 }
 
+#f1Query{
+	background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	height: 50px;
+	width: 200px;
+	margin: 20px;
+}
+
+#f1-news a{
+	color:#13383a;
+	font-size: 14px;
+	font-family: Comic Sans MS;
+}
+
+#f1-news a:hover{
+	color: #5098a0;
+}
+
  /* BASKETBALL SECTION */
 #basketball{
 	background: #031c49;
 	width: 100%;
 	height: 1150px;
 	top:0;
-}
-
-.basketball-title{
-	background: #686b7c;
-	text-align: center;
-	height:110px;
-	width: 220px;
-	margin: auto;
 }
  
 .basketball-image{
@@ -406,9 +512,29 @@ nav{
   	top: 0px;
 }
 
-/* FILLER */
+#basketballQuery{
+	background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	height: 50px;
+	width: 200px;
+	margin: 20px;
+}
 
+#basketball-news a{
+	color: #13383a;
+	font-size: 14px;
+	font-family: Comic Sans MS;
+}
 
+#basketball-news a:hover{
+	color: #5098a0;
+}
+
+/* GO TO TOP */
 .top {
     background-color: #727272;
     width: 100%;
@@ -544,6 +670,7 @@ nav{
 	font-size: 30px;
 } 
 
+
 .news-title{
 	font-size: 30px;
 }
@@ -567,31 +694,6 @@ nav{
 	font-size: 12px;
 }
 
-/* NEWS */
-#footballQuery{
-	margin-bottom: 20px;
-}
-
-#f1Query{
-	margin-bottom: 20px;
-}
-
-#basketballQuery{
-	margin-bottom: 20px;
-}
-
-#football-news a{
-	font-size: 15px;
-}
-
-#f1-news a{
-	font-size: 15px;
-}
-
-#basketball-news a{
-	font-size: 15px;
-}
-
 /* INTRO SECTION*/ 
 .intro-txt{
 	height: 600px;
@@ -602,7 +704,27 @@ nav{
  	border-bottom: 10px solid white;
  	width: 400px;
 }
- 
+
+.slideshow-img {
+	height: 98%;
+
+}
+
+/* SPORTS SECTION */
+.football-qoute,
+.f1-qoute, 
+.basketball-qoute{
+	font-size: 25px;
+}
+
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+	width: 350px;
+	height: 350px;
+}
+
+
 /*FOOTBALL SECTION*/
 #football{
 	height: 1200px;
@@ -611,6 +733,14 @@ nav{
 .football-image{
  	width: 100px;
   	height: 100px;
+}
+
+#footballQuery{
+	margin-bottom: 20px;
+}
+
+#football-news a{
+	font-size: 15px;
 }
 
 /* F1 SECTION */
@@ -622,9 +752,16 @@ nav{
  	width: 250px;
   	height: 100px;
 }
+
+#f1Query{
+	margin-bottom: 20px;
+}
+
+#f1-news a{
+	font-size: 15px;
+}
   
 /* BASKETBALL SECTION */
- 
 #basketball{
 	height: 1200px;
 } 
@@ -632,6 +769,14 @@ nav{
 .basketball-image{
  	width: 100px;
   	height: 100px;
+}
+
+#basketballQuery{
+	margin-bottom: 20px;
+}
+
+#basketball-news a{
+	font-size: 15px;
 }
 
 /* LOGO TRANSITION */
@@ -665,6 +810,29 @@ nav{
 .intro-header{
  	border-bottom: 10px solid white;
  	width: 800px;
+}
+
+/* SPORTS SECTION */
+#sports{
+	height: 600px;
+}
+
+.football-qoute,
+.f1-qoute, 
+.basketball-qoute{
+	font-size: 25px;
+}
+
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+	width: 280px;
+	height: 280px;
+}
+
+.flip-container {
+	display: inline-block;
+	margin: 0 0 20px 10px;
 }
 
 /* NEWS */

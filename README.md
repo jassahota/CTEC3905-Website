@@ -18,7 +18,7 @@ this is done with smooth scroll.
 ## Sports Sections
 - The News within the section is usinga  guardian API so once the user clicks on the button 3 main headlines relating to the sport display within
 the container for news.
-- The other 2 containers include breif informaiton about the teams using a list '<ul> & <li>' and below this is logos that have a hover effect once
+- The other 2 containers include breif informaiton about the teams using a list 'ul & li' and below this is logos that have a hover effect once
 the user hovers mouse of the image then text displays with description of logo with an overlay that is transparent
 -Between each section is a 'Go to top' the user can click this section where smooth scroll is used to scroll to the top of the website.
 
