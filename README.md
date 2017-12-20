@@ -38,7 +38,7 @@ the container for news.
 - The other 2 containers include breif informaiton about the teams using a list 'ul & li' and below this is logos that have a hover effect once
 the user hovers mouse of the image then text displays with description of logo with an overlay that is transparent.
 
--Between each section is a 'Go to top' the user can click this section where smooth scroll is used to scroll to the top of the website.
+- Between each section is a 'Go to top' the user can click this section where smooth scroll is used to scroll to the top of the website.
 
 ## Footer
 - The footer includes the name of the person who created the website and below is a logo of github and this a link that once hovered over will spin 360 degrees
