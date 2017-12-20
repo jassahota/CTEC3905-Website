@@ -100,19 +100,19 @@ faded in and out.
 
 
 ## Issues & Resolution
-- 1. Issue: The first issue I was having while designing my website was attempting to keep the navigation bar fixed to the position, the mobile nav bar
+- 1) Issue: The first issue I was having while designing my website was attempting to keep the navigation bar fixed to the position, the mobile nav bar
 kept causing issues for me and made a mess of my website by moving my content around.
-- 1. Resolution: The resolution to this issue was by creating a go to top link between each section so it is easier for the user to go to the top without
+- 1) Resolution: The resolution to this issue was by creating a go to top link between each section so it is easier for the user to go to the top without
 using the mouse scroll.
 
-- 2. Issue: An issue with the website was that the API was displaying 10 outputs but this was not wanted by myself as it was too much headlines from 
+- 2) Issue: An issue with the website was that the API was displaying 10 outputs but this was not wanted by myself as it was too much headlines from 
 the Guardian API.
-- 2. Resolution: I did some research on how Guardian API works and help from the lab session when we went through APIs I was able to figure out 
+- 2) Resolution: I did some research on how Guardian API works and help from the lab session when we went through APIs I was able to figure out 
 the different settings and how it works, I was able to only have 3 top headlines to display once clicking on the button.
 
-- 3. Issue: I identified that their was not much going on in the website as their was only three sections that all looked kind the same, and did 
+- 3) Issue: I identified that their was not much going on in the website as their was only three sections that all looked kind the same, and did 
 not bring any diversity within the website. 
-- 3. Resolution: The solution for this was by adding an additional section this was dedicated only to the three sports with flip cards that brought
+- 3) Resolution: The solution for this was by adding an additional section this was dedicated only to the three sports with flip cards that brought
 a different feel to the website and make it more engaging and interactive.
 
 ## Wireframe
